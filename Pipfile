@@ -1,0 +1,17 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+pyrogram = "*"
+tgcrypto = "*"
+fastapi = "*"
+uvicorn = "*"
+
+[dev-packages]
+mypy = "*"
+black = "*"
+
+[requires]
+python_version = "3.11"

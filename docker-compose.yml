@@ -1,0 +1,16 @@
+services:
+  tg-dnd:
+    build: .
+    container_name: tg-dnd
+    restart: unless-stopped
+    ports:
+      - 8000:8000
+    env_file:
+      - secrets.env
+    volumes:
+      - tg-dnd-data:/app/data:rw
+    stdin_open: true 
+    tty: true
+
+volumes:
+  tg-dnd-data:
